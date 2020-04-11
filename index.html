@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!--meta character should always be in utf-8 format. Title is always the site name to be-->
+  <head>
+    <meta charset="utf-8">
+    <title>Matthew's Personal Site</title>
+  </head>
+  <body>
+    <!--We used a table tab followed by table row and table data to stagger our intro to the website. This is so we can put our profile picture and
+    our name information beside it rather than veritically. We then used cellspacing element within the table tag and set a pixel value for the spacing of that item.-->
+    <table cellspacing="20">
+      <tr>
+        <td><img src="gentleman.jfif" alt="Matthews Profile Picture"></td>
+        <td><h3>Matthew Quezada</h3></td>
+      </tr>
+    </table>
+    <!--Images. img src="angela.png". We have our img html element and html attribute, but we need to also
+      specify the source of the image. Can copy the url of the image in to src. alt is where you add txt
+      to describe your image should it not load properly.
+      Additionally you can save an image in your html personal site folder and referene the file name below
+      under src and this eleviates reliance on a website url. 2 examplse seen below-->
+    <img src="https://robbreportedit.files.wordpress.com/2019/10/lunaz01.jpg" alt="Matthew's Interest.">
+    <img src="kimber1911.png" alt="Matthew's Interest.">
+    <!--Add center around content to center on screen. Alternatively can use right. Goes left by default.-->
+    <center>
+    <h1>Matthew Quezada</h1>
+    </center>
+    <!--P is for paragraph mode
+    em is emphasis or itaicised txt
+    strong is to bold txt-->
+    <!--Hyperlinks. When building a website we may want to direct people to specific items. In my case maybe to
+    the KPRS webbsite and ATP tennis. This will be done with the <a>href="https">"...". A is the tag, href is the
+    attribute, https is the url followed by brief description of the url. We cut out original stament of "kprsinc..." and
+    pasted into <a> tag url description-->
+    <p><em>Assistant Project Manager of <strong><a href="https://www.kprsinc.com/">KPRS Construction Services, Inc.</a></strong></em></p>
+    <p>Matthew began his carrer in construction as a project engineer. Although
+      his background is Chemistry, he has always had a love and passion for construciton.
+      Through the years he worked his way up the ranks, proving himself worthy of the
+      challanges one faces in the construction industry. Since began his journy, Matthew
+      has now worked his way up to the position of Assistant Project Manager within a large
+      general contractor known as <strong>KPRS Construction Services, Inc.</strong></p>
+      <!--hr (horizontal rule) gives a horizontal line. size=x (pixles thick). "noshade" will darken line-->
+    <hr size="3" noshade>
+    <h3>Projects & Work Experience</h3>
+    <!--ul (unordered list) gives you bullet points. Add additional ul indent for further bullet indentations.
+    li (list item) gives you the description location-->
+    <ul>
+        <li>Boulder City, Ca. - Solar power plant</li>
+          <ul>
+            <li>Malibu, Ca. - Hillside Conduminium</li>
+            <li>San Diego, Ca. - Subterranian/Ground level parking mixed use structure</li>
+          </ul>
+        <li>Perris, Ca. - 200k sqft concrete tilt up structure</li>
+    </ul>
+    <!--We are now going to add <tables> which help with indentation and padding of content. We can have
+    table rows and table data by entering <tr> which is only a single row. If you want your table to have
+    additional rows add another <tr>. Table data or cells are created with <td>. We can then add a header with
+    thead followed by a tr tag enveloping <th> tag or table header cell. Add a border and pixel size after table-->
+    <h3>My Work Experience</h3>
+    <table border=1>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Work</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2010-2013</td>
+          <td>BS in Chemistry</td>
+        </tr>
+        <tr>
+          <td>2010</td>
+          <td>Graduated from High School</td>
+        </tr>
+        <tr>
+          <td>2015-2020</td>
+          <td>Construction Industry</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr size=3 noshade>
+    <h3>My Hobbies</h3>
+    <!--ol (ordered list) provides a numeric list. You can also enter type=i for roman numeral list
+    or start=7 to start numbering at 7 etc...-->
+    <ol>
+        <li>Mechanics</li>
+        <li><strong><a href="https://www.atptour.com/">Tennis</a></strong></li>
+        <li>Cooking</li>
+          <ol type="i">
+            <li>Mechanics</li>
+            <li>Tennis</li>
+            <li>Cooking</li>
+          </ol>
+    </ol>
+    <!--br provides a line break-->
+    <br>
+    <h3>-OR-</h3>
+    <br>
+    <a href="hobbies.html"><strong>My Hobbies</strong></a>
+    <br>
+    <br>
+    <a href="contact-me.html"><strong>Contact Me</strong></a>
+    <h3><stong>Skills</stong></h3>
+    <!--This table is different as it is two side by side essentially. We use the colgroup tag with a span of 4 (columns)
+    We then apply the table row tag and have to fill out in a horizontal descending. Can also use table header the same.-->
+    <table border="1">
+      <colgroup span="4"></colgroup>
+      <tr>
+        <td>iOS Development</td>
+        <td>⭐⭐⭐⭐⭐</td>
+        <td>Photorophy</td>
+        <td>⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>Web Development</td>
+        <td>⭐⭐⭐⭐</td>
+        <td>Painting</td>
+        <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+    </table>
+  </body>
+</html>

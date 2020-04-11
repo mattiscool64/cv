@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Contacts</title>
+  </head>
+  <body>
+    <h1>My Contact Details</h1>
+    <p>Address:......</p>
+    <p>93759274359378</p>
+    <p>myemail@yahoo.com</p>
+      <!-- On the contact me section we want to give people the option to respond. We do this by inputting the
+      form class tag, followed by label (name of location they are to enter data in) and this followed by
+      input type which would be where they enter text. We also have to provide the abilit for them to submit
+      the information they input. This is done with input type "submit" followed by deleting the value attribute.
+      Other attribute functions for reference include things like color picker or even checkbox. Can also add
+      something like a password box.-->
+    <form class="" action="index.html" method="post">
+      <label>Your Name:</label>
+      <input type="text" name="" value="">
+      <input type="color" name="" value=""><br>
+      Do you want to sign up to the email list?
+      <input type="checkbox" name="" value=""><br>
+      <br>
+      <label>Password:</label>
+      <input type="text">
+      <input type="submit" name="">
+    </form>
+    <h2>Now we do a more propper form</h2>
+    <!--textarea is used to creat a text box. We also need to input "mailto:" with the email the information is to
+    be mailed to when the submit button is used In order for that to be clear we need to delete "class" from our form.
+    tag as well as add the atribute enctype (encoding type) and enter "text/plain" so that no information gets mixed up.
+    and this simply specifies that our website is encoded in utf-8. We also need to add a value to each of the name
+    attributes because that is going to identify the data within (video 26 ~5:00min)-->
+    <form action="mailto:mateoq92@yahoo.com" method="post" enctype="text/plain">
+      <label>Your Name:</label>
+      <input type="text" name="yourName" value=""><br>
+      <label>Your Email:</label>
+      <input type="email" name="yourEmail" value=""><br>
+      <label>Your Message:</label><br>
+      <textarea name="yourMessage" rows="10" cols="30"></textarea><br>
+      <input type="submit" name="">
+    </form>
+  </body>
+</html>
